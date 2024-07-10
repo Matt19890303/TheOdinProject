@@ -1,0 +1,56 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url("musicImage.jpg");
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: rgba(221, 154, 10, 0.6);
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Asap, sans-serif;
+    color: aquamarine;
+}
+
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 50px;
+    min-height: 80vh;
+  }
+
+.key {
+    text-align: center;
+    width: 120px;
+    padding: 20px;
+    background: rgba(221, 154, 10, 0.3);
+    border: 3px solid black;
+    border-radius: 4%;
+    transition: all 0.07s;
+}
+
+.sound {
+    color: aquamarine;
+}
+
+kbd {
+    display: block;
+    font-size: 30px;
+    font-family: Asap, sans-serif;
+    color: aquamarine;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px purple;
+}
