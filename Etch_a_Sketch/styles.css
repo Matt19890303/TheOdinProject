@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+
+
+* {
+    font-family: Asap, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("drawingImage.jpg");
+    background-size: cover;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    color: aliceblue;
+    text-shadow: 4px 5px 0px black;
+    margin: 10px auto;
+    /* border: solid red; */
+}
+
+.board {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  border: 3px solid red;
+  }
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  /* border: solid red; */
+}
+
+button {
+  background-color: rgba(194, 7, 7, 0.8);
+  color: aliceblue;
+  border-radius: 10%;
+  font-size: medium;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* when hovering over the button it changes size showing you have highlighted it */
+button:hover {
+  transform: scale(1.2);
+}
+
+.setSize {
+  margin: 10px;
+}
+
+/* Position text in the middle of the page/image */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: rgb(20, 69, 228); 
+  background-color: rgba(20, 69, 228, 0.4); 
+  border: 3px solid white;
+  border-radius: 1%;
+  width: 80%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}

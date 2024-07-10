@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Etch a Sketch</title>
+</head>
+<body>
+    <h1 class="header">
+        Sketch Pad
+    </h1>
+    <div class="box">
+        <div class="board"></div>
+        <div class="choices">
+            <button onclick="changeColour('black')">Black</button>
+            <button onclick="changeColour('gray')">Gray</button>
+            <button onclick="changeColour('white')">Erase</button>
+            <button onclick="changeColour('random')">Colourful</button>
+            <button onclick="reSet()">Reset</button>
+        </div>
+        <div>
+            <!-- this.value is for whatever value you have put in this input field -->
+            <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
+            <button class="setSize">Set size</button>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
